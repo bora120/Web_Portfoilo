@@ -149,7 +149,8 @@ li {
 
 .login-gif {
   width: 80px;
-  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 .login-form input {
@@ -325,12 +326,30 @@ img {
   text-align: center;
 }
 
+/* ====== 팀원별 카드 색상 ====== */
+.team-card.gayeon {
+  background-color: #ffe1ec;
+}
+
+.team-card.eunsu {
+  background-color: #e0f7fa;
+}
+
+.team-card.seoyeon {
+  background-color: #fff9c4;
+}
+
+.team-card.sumin {
+  background-color: #f3e5f5;
+}
+
 .team-card {
-  background-color: #fefefe;
-  padding: 20px;
   border-radius: 12px;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px dashed #d3a4e1;
+  transition: transform 0.2s;
+}
+.team-card:hover {
+  transform: scale(1.05);
 }
 
 /* ====== 소개 정보 ====== */
@@ -342,7 +361,7 @@ img {
 }
 
 .profile-card {
-  background-color: #fce4ec;
+  background-color: #fbf9e1;
   text-align: center;
   padding: 20px;
   border-radius: 15px;
