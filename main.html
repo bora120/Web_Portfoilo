@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자기소개</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="main-page">
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="menu.gif" alt="움짤" class="logo-icon" />Portfolio menu
+        </div>
+        <ul class="nav">
+          <li><a href="main.html" class="active">자기소개</a></li>
+          <li><a href="myproject.html">과제 모음</a></li>
+          <li><a href="secon.html">SECON</a></li>
+          <li><a href="team.html">팀 프로젝트</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="container">
+        <h1 class="title-centered">🌸간단 소개🌸</h1>
+        <div class="profile-box-grid">
+          <div class="profile-card">이름<br /><strong>김가연</strong></div>
+          <div class="profile-card">학교<br /><strong>중부대학교</strong></div>
+          <div class="profile-card">
+            전공<br /><strong>정보보호학과</strong>
+          </div>
+          <div class="profile-card">
+            GitHub<br /><a href="https://github.com/bora120" target="_blank"
+              >github.com/bora120</a
+            >
+          </div>
+        </div>
+        <div class="profile-img-row">
+          <img src="main.jpg" alt="환영 이미지" />
+          <img src="main2.jpg" alt="말풍선 이미지" />
+        </div>
+        <div class="section-box" style="text-align: center">
+          <button class="toggle-button" onclick="toggleContact()">
+            연락수단 (클릭)
+          </button>
+          <div id="contact-info" class="toggle-content">
+            <p><strong>전화번호:</strong> 010-9495-7736</p>
+            <p><strong>인스타:</strong> @__7yxn</p>
+            <p><strong>이메일:</strong> kayun0120@gmail.com</p>
+          </div>
+        </div>
+
+        <script>
+          function toggleContact() {
+            const box = document.getElementById('contact-info')
+            box.style.display = box.style.display === 'block' ? 'none' : 'block'
+          }
+        </script>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="login-page">
+    <div class="login-wrapper">
+      <div class="login-message">
+        <h1>
+          ❤️Welcome❤️ <br />
+          to GaYeon's Web Portfolio
+        </h1>
+        <img src="menu.gif" alt="움짤" class="login-gif" />
+      </div>
+      <form action="main.html" method="get" class="login-form">
+        <h2>🔐로그인🔐</h2>
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+          <label for="id">아이디</label>
+          <input type="text" id="id" name="id" required style="flex: 1;" />
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <label for="password">비밀번호</label>
+          <input type="password" id="password" name="password" required style="flex: 1;" />
+        </div>
+        <div class="login-buttons">
+          <button type="submit">로그인</button>
+          <button type="reset">취소</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
